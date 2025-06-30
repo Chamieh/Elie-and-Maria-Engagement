@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elie & Maria Engagement Invitation 💍</title>
+<link rel="icon" type="image/svg+xml" href="ring.svg">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    text-align: center;
+    background: url('https://drive.google.com/uc?export=view&id=1BTAIIAP9mRaBUoL4Gq5k22YtS3iMU992') no-repeat center center fixed;
+    background-size: cover;
+  }
+  .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeInDown 1s ease-out forwards;
+  }
+  .event {
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+  }
+  a {
+    color: #ffd700;
+  }
+  @keyframes fadeInDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  @keyframes fadeIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+</style>
+</head>
+<body>
+<div class="overlay">
+  <h1>Elie &amp; Maria Engagement <span aria-label="ring" role="img">💍</span></h1>
+  <div class="event">
+    <p>📸 5:00 PM – Photoshoot for Maria and Elie</p>
+    <p>📍 <a href="https://maps.app.goo.gl/Am1Je8q14Pzk9Cp86">Photoshoot Location</a></p>
+  </div>
+  <div class="event">
+    <p>☕ 6:00 PM – Arrival of the groom’s family at the engagement venue</p>
+    <p>📍 <a href="https://maps.app.goo.gl/Am1Je8q14Pzk9Cp86">Engagement Venue</a></p>
+    <p>Welcome coffee ☕</p>
+    <p>Engagement prayer 🙏</p>
+    <p>Ring exchange ceremony 💍</p>
+    <p>Served with juice 🧃 and petit four 🍰</p>
+  </div>
+  <div class="event">
+    <p>🚗 7:00 PM – Departure to the restaurant</p>
+    <p>📍 Transit from the engagement venue</p>
+  </div>
+  <div class="event">
+    <p>🏨 7:30 PM – Arrival at the restaurant and dinner 🍽️</p>
+    <p>📍 <a href="https://maps.app.goo.gl/qL84X9b7hgPx7An57">Restaurant Location</a></p>
+  </div>
+</div>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const events = document.querySelectorAll('.event');
+    events.forEach((el, i) => {
+      setTimeout(() => { el.style.opacity = '1'; }, i * 600 + 600);
+    });
+    document.querySelector('h1').style.opacity = '1';
+  });
+</script>
+</body>
+</html>
